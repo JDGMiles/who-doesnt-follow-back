@@ -56,7 +56,7 @@ function process(){
 	for(i=0; i<followers.length; i++){followers[i]='';}
 	for(i=0; i<followerdata.length; i++){followerdata[i]='';}
 	rawfollowers=document.getElementById("FollowersData").value;
-	rawfollowers=rawfollowers.split("User Actions");
+	rawfollowers=rawfollowers.split(" User Actions");
 	for(i=1; i<rawfollowers.length; i++){
 		followerdata=rawfollowers[i].split("\n");
 		followers[i-1]=followerdata[3];
